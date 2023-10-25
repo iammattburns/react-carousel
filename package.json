@@ -1,7 +1,7 @@
 {
-  "name": "@iammattburns/react-package-boilerplate",
+  "name": "@iammattburns/react-carousel",
   "version": "1.0.1",
-  "description": "A boilerplate for creating React packages with Rollup, Storybook, and Typescript.",
+  "description": "A lightweight carousel component.",
   "type": "module",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -17,12 +17,12 @@
     "react",
     "storybook",
     "rollup",
-    "boilerplate"
+    "carousel"
   ],
   "author": "Matt Burns",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iammattburns/react-package-boilerplate.git"
+    "url": "git+https://github.com/iammattburns/react-carousel.git"
   },
   "license": "MIT",
   "engines": {

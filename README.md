@@ -1,73 +1,47 @@
-# React Package Boilerplate
+# React Carousel
 
-This boilerplate aids in creating React packages utilizing Rollup, Storybook, and Typescript. Kickstart your React library development with a configuration that provides a seamless development experience.
-
-![npm bundle size](https://img.shields.io/bundlephobia/min/@iammattburns/react-package-boilerplate?style=flat-square) ![npm bundle size](https://img.shields.io/bundlephobia/minzip/@iammattburns/react-package-boilerplate?style=flat-square) ![npm downloads](https://img.shields.io/npm/dt/@iammattburns/react-package-boilerplate?style=flat-square) ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)
-
-## Features
-
-- **Rollup**: Efficiently bundles your React components for optimal use in other projects.
-- **Storybook**: Visually test and showcase your components in an isolated environment.
-- **Typescript**: Benefit from static type checking and the latest ECMAScript features.
-
-## Getting Started
-
-### Prerequisites
-
-Ensure you have the following software installed:
-
-- Node.js (v12 or newer)
-- Yarn or npm
+React Carousel is a lightweight and customizable carousel component for React applications.
 
 ### Installation
 
-Clone the repository:
+You can install React Carousel using npm:
 
 ```bash
-git clone https://github.com/iammattburns/react-package-boilerplate.git
+npm install @iammattburns/react-carousel
 ```
 
-Move to the project directory:
-```bash
-cd react-package-boilerplate
-```
-
-Install dependencies:
-```bash
-npm install
-```
-
-### Development
-#####Running Storybook
-To start the Storybook server:
+### Usage
+To use React Carousel, import the component and render it with your desired configuration:
 
 ```bash
-npm run storybook
+import React from 'react';
+import Carousel from 'react-carousel';
+
+const MyCarousel = () => {
+  return (
+    <Carousel>
+      <img src="image1.jpg" alt="Image 1" />
+      <img src="image2.jpg" alt="Image 2" />
+      <img src="image3.jpg" alt="Image 3" />
+    </Carousel>
+  );
+};
+
+export default MyCarousel;
 ```
 
-This will start the Storybook server, and you can begin developing your components.
+### Props
 
-### Building the Package
-To build the React components for distribution:
-```bash
-npm run build
-```
-This will produce an optimized bundle in the dist directory, ready for publishing.
+React Carousel accepts the following props:
 
-### Publishing
-Once you are ready to publish your package:
+- `autoplay`: boolean - Whether the carousel should autoplay (default: `false`)
+- `autoplaySpeed`: number - The speed at which the carousel should autoplay (default: `3000`)
+- `dots`: boolean - Whether to show navigation dots (default: `true`)
+- `infinite`: boolean - Whether to enable infinite looping (default: `true`)
+- `speed`: number - The speed of the carousel animation (default: `500`)
+- `slidesToShow`: number - The number of slides to show at once (default: `1`)
+- `slidesToScroll`: number - The number of slides to scroll at once (default: `1`)
 
-1. Modify the `package.json` with your package name, description, repository  information, and other relevant details.
-2. Run the build script.
-3. Publish to npm:
+## License
 
-```bash
-npm publish
-```
-
-### Contributing
-We welcome contributions! Please see `CONTRIBUTING.md` for guidelines on how to proceed.
-
-### License
-This project is licensed under the MIT License. See the `LICENSE` file for more details.
-
+React Carousel is licensed under the MIT License.
