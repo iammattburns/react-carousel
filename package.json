@@ -42,6 +42,8 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.5",
+    "@storybook/addon-a11y": "^7.5.1",
+    "@storybook/addon-essentials": "^7.5.1",
     "@storybook/react": "^7.5.1",
     "@storybook/react-webpack5": "^7.5.1",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
