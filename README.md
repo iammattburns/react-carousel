@@ -11,18 +11,25 @@ npm install @iammattburns/react-carousel
 ```
 
 ### Usage
+
 To use React Carousel, import the component and render it with your desired configuration:
 
 ```bash
 import React from 'react';
-import Carousel from 'react-carousel';
+import Carousel from '@iammattburns/react-carousel';
 
 const MyCarousel = () => {
   return (
     <Carousel>
-      <img src="image1.jpg" alt="Image 1" />
-      <img src="image2.jpg" alt="Image 2" />
-      <img src="image3.jpg" alt="Image 3" />
+        <Carousel.Slide>
+            <img src="image1.jpg" alt="Image 1" />
+        </Carousel.Slide>
+        <Carousel.Slide>
+            <img src="image2.jpg" alt="Image 2" />
+        </Carousel.Slide>
+        <Carousel.Slide>
+            <img src="image3.jpg" alt="Image 3" />
+        </Carousel.Slide>
     </Carousel>
   );
 };
